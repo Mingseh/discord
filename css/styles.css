@@ -1,1 +1,52 @@
 @import "/css/reset.css";
+
+.hold {
+    position: fixed;
+    display: flex;
+    position: relative;
+    background-color: #2B2D31;
+}
+
+.sideber {
+    background-color: #1E1F22;
+    width: 75px;
+    height: 100vh;   
+    display: flex;
+    justify-content: center;
+}
+
+.sideber__column {
+    display: block;
+}
+
+.sideber__img img{
+    margin-top: 10px;
+    /* margin-left: 5px; */
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.profile {
+    display: flex;
+    background-color: #232428;
+    align-items: center;
+    width: 245px;
+    height: 50px;
+    position: absolute;
+    left: 75px;
+    bottom: 0px;
+    color: white;
+    
+}
+
+.profile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    margin: 0px 7px;
+}
+
+.profile span {
+    font-size: 14px;
+}
