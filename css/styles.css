@@ -1,15 +1,18 @@
 @import "/css/reset.css";
 
+body {
+    display: flex;
+}
+
 .hold {
     position: fixed;
-    display: flex;
+    /* display: flex; */
     position: relative;
-    background-color: #2B2D31;
 }
 
 .sideber {
     background-color: #1E1F22;
-    width: 75px;
+    width: 72px;
     height: 100vh;   
     display: flex;
     justify-content: center;
@@ -31,10 +34,10 @@
     display: flex;
     background-color: #232428;
     align-items: center;
-    width: 245px;
+    width: 240px;
     height: 50px;
     position: absolute;
-    left: 75px;
+    left: 72px;
     bottom: 0px;
     color: white;
     
@@ -49,4 +52,55 @@
 
 .profile span {
     font-size: 14px;
+}
+
+.friend {
+    background-color: #2B2D31;
+    width: 240px;
+    height: 100vh;
+}
+
+.friend input {
+    display: block;
+    width: 215px;
+    height: 25px;
+    background-color: #1E1F22;
+    border: none;
+    border-radius: 3px;
+    margin: 10px auto;
+}
+
+.friend input::placeholder {
+    color: #949BA4;
+    padding: 0 0 0 5px;
+}
+
+.friend span {
+    display: block;
+    border: #1F2023 solid 0.6px;
+    margin-bottom: 6px;
+}
+
+.friend__more a{
+    color: #949BA4;
+}
+
+.friend__more {
+    display: flex;
+    margin: 2px 8px;
+    color: #949BA4;
+    width: 224px;
+    height: 42px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+
+.friend__more i {
+    display: block;
+    margin: 10px;
+}
+
+.friend__more .fa-user {
+    padding-left: 2px;
 }
