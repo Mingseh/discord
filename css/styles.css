@@ -2,6 +2,7 @@
 
 body {
     display: flex;
+    background-color: black;
 }
 
 .hold {
@@ -43,24 +44,51 @@ body {
     
 }
 
-.profile img {
+.profile__img {
+    display: flex;
+    position: relative;
+}
+
+.profile__img img {
     width: 32px;
     height: 32px;
     border-radius: 20px;
     margin: 0px 7px;
 }
 
-.profile span {
-    font-size: 14px;
+.profile__img span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #23A559;
+    border-radius: 10px;
+    border: #232428 solid 3.3px;
+    position: absolute;
+    bottom: -3.25px;
+    right: 3.6px;
 }
 
-.friend {
+.profile__name{
+    display: block;
+    font-size: 14px;
+    margin-right: 75px;
+}
+
+.profile__icon {
+    margin-left: 13px;
+}
+
+.profile__icon i{
+    margin-right: 5px;
+}
+
+.nav {
     background-color: #2B2D31;
     width: 240px;
     height: 100vh;
 }
 
-.friend input {
+.nav input {
     display: block;
     width: 215px;
     height: 25px;
@@ -70,22 +98,22 @@ body {
     margin: 10px auto;
 }
 
-.friend input::placeholder {
+.nav input::placeholder {
     color: #949BA4;
     padding: 0 0 0 5px;
 }
 
-.friend span {
+.nav span {
     display: block;
     border: #1F2023 solid 0.6px;
     margin-bottom: 6px;
 }
 
-.friend__more a{
+.nav__more a{
     color: #949BA4;
 }
 
-.friend__more {
+.nav__more {
     display: flex;
     margin: 2px 8px;
     color: #949BA4;
@@ -96,11 +124,11 @@ body {
 }
 
 
-.friend__more i {
+.nav__more i {
     display: block;
     margin: 10px;
 }
 
-.friend__more .fa-user {
+.nav__more .fa-user {
     padding-left: 2px;
 }
