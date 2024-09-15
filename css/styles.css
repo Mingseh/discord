@@ -23,12 +23,26 @@ body {
     display: block;
 }
 
+.sideber__line {
+    background-color: #35363C;
+    width: 32px;
+    height: 2px;
+    display: block;
+    border-radius: 1px;
+    margin: auto;
+    margin-top: 10px;
+}
+
 .sideber__img img{
     margin-top: 10px;
     /* margin-left: 5px; */
     width: 50px;
     height: 50px;
     border-radius: 25px;
+}
+
+.sideber__img:first-child img {
+    border-radius: 15px;
 }
 
 .profile {
